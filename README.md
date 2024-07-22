@@ -1,5 +1,5 @@
 # Project Title
-a single template project with html and scss
+single template project with html and scss
 
 ## Features
 responsive page with flexbox and grid
@@ -8,5 +8,5 @@ responsive page with flexbox and grid
 
 
 ## Installation
-extract files and run index.html
+Extract files and run index.html
 
