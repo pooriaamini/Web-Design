@@ -16,11 +16,12 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background-color: black;
+  background-color: white;
   position: fixed;
   z-index: 2000;
   top: 1.5rem;
   right: 1.5rem;
+  cursor: pointer;
 }
 .navigation_icon {
   position: relative;
@@ -30,7 +31,7 @@
 .navigation_icon, .navigation_icon::after, .navigation_icon::before {
   height: 1.5px;
   width: 1.5rem;
-  background-color: red;
+  background-color: #DC4298;
   display: inline-block;
 }
 .navigation_icon::after, .navigation_icon::before {
@@ -57,10 +58,12 @@
 .navigation_checkbox:checked + .navigation_button .navigation_icon::after {
   top: 0;
   transform: rotate(-135deg);
+  background-color: black;
 }
 .navigation_checkbox:checked + .navigation_button .navigation_icon::before {
   top: 0;
   transform: rotate(135deg);
+  background-color: black;
 }
 .navigation_background {
   width: 2rem;
@@ -87,8 +90,9 @@
 .navigation_list {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 15%;
+  transform: translate(-50%, -10%);
+  width: 100%;
 }
 .navigation_list .item {
   margin: 1rem;
@@ -96,14 +100,15 @@
   background-image: linear-gradient(105deg, transparent 0%, transparent 50%, white 50%);
   background-size: 250%;
   text-align: center;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   transition: all 0.5s;
+  border-radius: 5px;
 }
 .navigation_list .item:hover:not(.b) {
   background-position: 100%;
 }
 .navigation_list .link {
-  font-size: 2rem;
+  font-size: 1.25rem;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -191,7 +196,7 @@
   transition: all 0.5s;
 }
 .header_item .btn:hover {
-  background-color: #230F0F;
+  background-color: #DC4298;
   color: white;
 }
 @media (max-width: 1000px) {

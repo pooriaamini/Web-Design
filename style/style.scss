@@ -1,5 +1,3 @@
-@import "svg";
-
 * {
     margin: 0;
     padding: 0;
@@ -23,11 +21,12 @@
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
-        background-color: black;
+        background-color: white;
         position: fixed;
         z-index: 2000;
         top: 1.5rem;
         right: 1.5rem;
+        cursor: pointer;
 
     }
 
@@ -42,7 +41,7 @@
     &_icon, &_icon::after, &_icon::before{
         height: 1.5px;
         width: 1.5rem;
-        background-color: red;
+        background-color: #DC4298;
         display: inline-block;
         
 
@@ -73,11 +72,13 @@
       }
       &_checkbox:checked + &_button &_icon{
         background-color: transparent;
+
       
       }
       &_checkbox:checked + &_button &_icon::after{
         top: 0;
         transform: rotate(-135deg);
+        background-color: black;
       
       
       
@@ -86,6 +87,7 @@
       &_checkbox:checked + &_button &_icon::before{
         top: 0;
         transform: rotate(135deg);
+        background-color: black;
       
       }
 
@@ -119,8 +121,9 @@
     &_list{
         position: absolute;
         left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
+        top: 15%;
+        transform: translate(-50%,-10%);
+        width: 100%;
 
       .item{
         margin: 1rem;
@@ -128,8 +131,9 @@
         background-image: linear-gradient(105deg,transparent 0% ,transparent 50% ,white 50%);
         background-size: 250%;
         text-align: center;
-        padding: .5rem 1rem;
+        padding: .5rem ;
         transition: all .5s;
+        border-radius: 5px;
         &:hover:not(.b){
             background-position: 100%;
         }
@@ -137,7 +141,7 @@
       }
 
         .link{
-            font-size: 2rem;
+            font-size: 1.25rem;
             text-decoration: none;
             text-transform: capitalize;
            
@@ -282,7 +286,7 @@
             transition: all .5s;
 
             &:hover {
-                background-color: #230F0F;
+                background-color: #DC4298;
                 color: white;
 
             }
